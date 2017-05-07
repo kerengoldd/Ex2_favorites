@@ -1,4 +1,4 @@
-## Ex2_favorites
+## [Ex2_favorites](https://kerengoldd.github.io/Ex2_favorites/)
 Web service to VOD favorites
 GET:
 * To see all the favorites -- /getAllFavorites
