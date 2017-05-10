@@ -10,6 +10,8 @@ Web service to VOD favorites
 # API
 ## Verb: GET
 
+return all the favorites
+
 * To see all the favorites -- /getAllFavorites
 
 Example:
@@ -50,7 +52,9 @@ Category: "musical"
 
 ## Verb:POST
 
-* To get the favorite of someone ##/getFavoritesOfUser(send his name)
+get user name and rerturn all his favorites
+
+* To get the favorite of someone /getFavoritesOfUser(send his name)
 
 Example:
 
