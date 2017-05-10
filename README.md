@@ -8,11 +8,13 @@ Web service to VOD favorites
 * [Heroku](https://favorites1.herokuapp.com/getAllFavorites)
 
 # API
+
+## /getAllFavorites
 ## Verb: GET
 
 return all the favorites
 
-* To see all the favorites -- /getAllFavorites
+* To see all the favorites /getAllFavorites
 
 Example:
 
@@ -50,6 +52,7 @@ Month: "July",
 Category: "musical"
 }
 
+## /getFavoritesOfUser
 ## Verb:POST
 
 get user name and rerturn all his favorites
@@ -60,6 +63,7 @@ Example:
 
 [{"Name":"wolverine","Rating":40,"Month":"October","Category":"Action"},{"Name":"XXX","Rating":5,"Month":"February","Category":"Action"},{"Name":"Ted","Rating":6,"Month":"April","Category":"Comedy"},{"Name":"Hangover","Rating":2,"Month":"Juny","Category":"Comedy"},{"Name":"Avatar","Rating":6,"Month":"July","Category":"Sci-fi"}]
 
+## /getFavoritesOfMonthByCategory
 ## Verb:POST
 
 get month and category and return all the favorites by the category in the month
@@ -71,4 +75,3 @@ Example:
 [{"Name":"Hary potter","Rating":7,"Month":"March","Category":"Children"}]
 
 
-[git](https://github.com/kerengoldd/Ex2_favorites/blob/master/README.md)
