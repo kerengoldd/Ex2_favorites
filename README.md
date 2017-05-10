@@ -5,7 +5,7 @@ Web service to VOD favorites
 
 * [GitHub](https://github.com/kerengoldd/Ex2_favorites)
 
-* [Heroku](https://favorites1.herokuapp.com/getAllFavorites)
+* [Heroku](https://favorites1.herokuapp.com/API)
 
 # API
 
