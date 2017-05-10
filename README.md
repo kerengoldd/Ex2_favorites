@@ -58,7 +58,11 @@ Example:
 
 ## Verb:POST
 
+get month and category and return all the favorites by the category in the month
+
 * To get the bests of anycategory by month ##/getFavoritesOfMonthByCategory(month,category)
+
+Example:
 
 [{"Name":"Hary potter","Rating":7,"Month":"March","Category":"Children"}]
 
