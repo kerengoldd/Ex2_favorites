@@ -10,11 +10,11 @@ app.use('/assets',express.static(`${__dirname}/public`));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extend: true}));
 
-app.get('/getAllFavorites',(req,res) => {
+app.GET('/getAllFavorites',(req,res) => {
     res.status(200).json(favoritFunction.getAllFavorites());
 });
 
-app.post('/getFavoritesOfUser',(req ,res) => {
+app.POST('/getFavoritesOfUser',(req ,res) => {
         res.status(200).json(favoritFunction.getFavoritesOfUser(req.body.user));
 });
 
