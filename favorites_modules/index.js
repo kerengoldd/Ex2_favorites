@@ -9,7 +9,6 @@ module.exports = class favorite {
 
 // get favorites by user name
     static getFavoritesOfUser(User) {
-        //var newArr = [];
         for (var i = 0; i < favorites.length; i++) {
             if (favorites[i].user === User) {
                 return favorites[i].Ufavorites;
