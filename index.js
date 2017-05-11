@@ -35,7 +35,7 @@ app.all('*',(req,res) =>{
         </head>
         <body>
         <h1>Your URL Wrong</h1>
-        <a href="https://kerengoldd.github.io/Ex2_favorites/" >
+        <a href="https://kerengoldd.github.io/Ex2_favorites/" > API </a>
         <img src="assets/keren.jpg">
         </body>
         </html>`);
