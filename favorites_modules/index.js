@@ -1,34 +1,32 @@
-const favorites = require('./data/jsonfavorites.json');
+const mongoose = require('mongoose'),
+    consts = require('../consts'),
+    favorites = require('./data/favoritesList');
 
-module.exports = class favorite {
+mongoose.Promise = global.Promise;
+mongoose.connect(consts.MLAB_KEY);
+mongoose.connection.on('error',
+    (err) => console.log(`Connection error: ${err}`));
+mongoose.connection.on('open',
+    ()    => console.log('Connected'));
+mongoose.Promise = global.Promise;
+module.exports = class Favorite {
 
 //get all users && they favorites
     static getAllFavorites() {
-        return favorites;
+        return favorites.find();
     }
-
 // get favorites by user name
     static getFavoritesOfUser(User) {
-        for (var i = 0; i < favorites.length; i++) {
-            if (favorites[i].user === User) {
-                return favorites[i].Ufavorites;
-            }
-        }
-        return {"erroe": "not exist"};
+        return favorites.findOne({user: User});
     }
-
 // get the favorites of month by category (children is the best)
     static getFavoritesOfMonthByCategory(month, category) {
-        var bestsOfMonth = [];
-        for (var i = 0; i < favorites.length; i++) {
-            for (let j = 0; j < favorites[i].Ufavorites.length; j++) {
-                if (favorites[i].Ufavorites[j].Month === month && favorites[i].Ufavorites[j].Category == category)
-                    bestsOfMonth.push(favorites[i].Ufavorites[j]);
-                else
-                if (bestsOfMonth == null || bestsOfMonth == [])
-                    return {"Errorrrr": "Not found any movie at this category or at this month"};
-            }
-        }
-        return bestsOfMonth;
+     return  favorites.find({
+             $and: [
+                 {'Ufavorites.Month': month},
+                 {'Ufavorites.Category': category}]
+         }
+            ,{"_id":0,"user":1,"Ufavorites.Name":1,"Ufavorites.Month": 1 ,"Ufavorites.Category": 1});
+
     }
 };

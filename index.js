@@ -6,39 +6,27 @@ const express = require('express'),
     bodyParser = require('body-parser');
 
 app.use('/assets',express.static(`${__dirname}/public`));
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extend: true}));
 
+app.get('/', function (req, res) {
+    res.sendfile(`${__dirname}/index.html`);
+});
+
 app.get('/getAllFavorites',(req,res) => {
-    res.status(200).json(favoritFunction.getAllFavorites());
+    favoritFunction.getAllFavorites().then(docs => res.json(docs));
 });
 
 app.post('/getFavoritesOfUser',(req ,res) => {
-        res.status(200).json(favoritFunction.getFavoritesOfUser(req.body.user));
-});
-app.get('/API',(req ,res) => {
-    res.status(200).send();
+        favoritFunction.getFavoritesOfUser(req.body.user).then(docs => res.json(docs));
 });
 
 app.post('/getFavoritesOfMonthByCategory',(req,res) =>{
-    res.json(favoritFunction.getFavoritesOfMonthByCategory(req.body.month, req.body.category));
+    favoritFunction.getFavoritesOfMonthByCategory(req.body.month, req.body.category).then(docs => res.json(docs));
 });
 
 app.all('*',(req,res) =>{
-    res.send(`
-        <!doctype html>
-        <html>
-        <head>
-        <title>Wrong URL</title>
-        <link href=assets/style.css rel=stylesheet>
-        </head>
-        <body>
-        <h1>Your URL Wrong</h1>
-        <a href="https://kerengoldd.github.io/Ex2_favorites/" > API </a>
-        <img src="assets/keren.jpg">
-        </body>
-        </html>`);
+    res.sendFile(`${__dirname}/index.html`);
 })
 
 app.listen(port);
