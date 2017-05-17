@@ -19,6 +19,9 @@ module.exports = class Favorite {
     }
 // get the favorites of month by category (children is the best)
     static getFavoritesOfMonthByCategory(month, category) {
-   return  favorites.find({'Ufavorites.Month':month, 'Ufavorites.Category':category},{"Ufavorites.$":1});
+     //   for (var i=0 ; i < favorites.length;i++){
+
+  var doc = favorites.find({'Ufavorites.Month' :month},{"Ufavorites.$":1});
+  return doc.find({'Ufavorites.Category':category});
     }
 };
