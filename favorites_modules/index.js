@@ -1,7 +1,6 @@
 const mongoose = require('mongoose'),
     consts = require('../consts'),
-    favorites = require('./data/favoritesList'),
-    uf = require('./data/UF').model;
+    favorites = require('./data/favoritesList');
 mongoose.Promise = global.Promise;
 mongoose.connect(consts.MLAB_KEY);
 mongoose.connection.on('error',
@@ -20,8 +19,6 @@ module.exports = class Favorite {
     }
 // get the favorites of month by category (children is the best)
     static getFavoritesOfMonthByCategory(month, category) {
-console.log(uf);
-   return  uf.find({ Month: month , Category: category})
-            ;
+   return  favorites.find({'Ufavorites.Month':month, 'Ufavorites.Category':category},{"Ufavorites.$":1});
     }
 };
