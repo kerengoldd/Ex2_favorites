@@ -22,7 +22,16 @@ app.post('/getFavoritesOfUser',(req ,res) => {
 });
 
 app.post('/getFavoritesOfMonthByCategory',(req,res) =>{
-    favoritFunction.getFavoritesOfMonthByCategory(req.body.month, req.body.category).then(docs => res.json(docs));
+    favoritFunction.getFavoritesOfMonthByCategory(req.body.month, req.body.category ,res);
+    //.then(docs => res.json(docs));
+});
+
+app.post('/getByRating',(req,res)=>{
+    console.log("getByRating before");
+    favoritFunction.getByRating(req,res,req.body.mini, req.body.max);
+    console.log("getByRating after");
+
+    //.then(docs => res.json(docs));
 });
 
 app.all('*',(req,res) =>{
