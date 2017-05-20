@@ -15,7 +15,6 @@ module.exports = class Favorite {
     static getAllFavorites() {
         return favorites.find();
     }
-
 // get favorites by user name
     static getFavoritesOfUser(User) {
         return favorites.findOne({user: User});
