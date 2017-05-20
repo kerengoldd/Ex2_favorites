@@ -7,6 +7,5 @@ mongoose.Promise = global.Promise;
         user:{type:String, index:1, required:true, unique:true},
         Ufavorites:[Ufavorites]
     },{collection:'favorites'});
-
     const favorites = mongoose.model('favorites',favoriteSchema);
     module.exports = favorites;
