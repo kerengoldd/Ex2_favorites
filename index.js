@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extend: true}));
 
 app.get('/', function (req, res) {
-    res.redirect(`https://kerengoldd.github.io/Ex2_favorites/`);
+    res.sendfile(`${__dirname}/index.html`);
 });
 
 app.get('/getAllFavorites',(req,res) => {
@@ -35,9 +35,7 @@ app.post('/getByRating',(req,res)=>{
 });
 
 app.all('*',(req,res) =>{
-     res.sendFile(`${__dirname}/index.html`);
-  //  res.redirect(`https://kerengoldd.github.io/Ex2_favorites/`);
-
+    res.sendFile(`${__dirname}/index.html`);
 })
 
 app.listen(port);

@@ -1,13 +1,85 @@
 <!doctype html>
 <html>
 <head>
-    <title>Wrong URL</title>
+    <title>API</title>
     <link href=assets/style.css rel=stylesheet>
 </head>
 <body>
-<h1>Your URL Wrong<a href="https://kerengoldd.github.io/Ex2_favorites/" ><br> API </a></h1>
+<h1>Favorites API<a href="https://kerengoldd.github.io/Ex2_favorites/" ><br> API </a></h1>
 <h1><a href="https://favorites1.herokuapp.com/" >See u in Heroku </a></h1>
 <h1><a href="https://github.com/kerengoldd/Ex2_favorites" >See u in GitHub </a></h1>
 <img src="assets/keren.jpg">
+<section><h1> API</h1>
+
+    <h2>/getAllFavorites</h2>
+    <h3>Verb: GET</h3>
+<a href="https://favorites1.herokuapp.com/getAllFavorites"> Link to /getAllFavorites</a>
+    return all the favorites
+
+    * To see all the favorites /getAllFavorites
+
+    Example:
+
+    {
+    user: "keren",
+    Ufavorites: [
+    {
+    Name: "50 shades",
+    Rating: 1,
+    Month: "March",
+    Category: "Romance"
+    },
+    {
+    Name: "Spongbob",
+    Rating: 12,
+    Month: "March",
+    Category: "children"
+    },
+    {
+    Name: "Aladin",
+    Rating: 2,
+    Month: "Aprirl",
+    Category: "children"
+    },
+    {
+    Name: "Charly & half",
+    Rating: 3,
+    Month: "August",
+    Category: "Israeli"
+    },
+    {
+    Name: "Grease",
+    Rating: 8,
+    Month: "July",
+    Category: "musical"
+    }
+
+    <h2> /getFavoritesOfUser</h2>
+    <h3>Verb:POST</h3>
+    <a href="https://favorites1.herokuapp.com/getFavoritesOfUser"> Link to /getFavoritesOfUser</a>
+    <h4>send on POST method User Name </h4>
+
+    get user name and rerturn all his favorites
+
+    * To get the favorite of someone /getFavoritesOfUser(send his name)
+
+    Example:
+
+    [{"Name":"wolverine","Rating":40,"Month":"October","Category":"Action"},{"Name":"XXX","Rating":5,"Month":"February","Category":"Action"},{"Name":"Ted","Rating":6,"Month":"April","Category":"Comedy"},{"Name":"Hangover","Rating":2,"Month":"Juny","Category":"Comedy"},{"Name":"Avatar","Rating":6,"Month":"July","Category":"Sci-fi"}]
+
+    <h2> /getFavoritesOfMonthByCategory</h2>
+    <h3> Verb:POST</h3>
+    <a href="https://favorites1.herokuapp.com/getFavoritesOfMonthByCategory"> Link to /getFavoritesOfMonthByCategory</a>
+
+    <h4>send on POST method Month & Category </h4>
+    get month and category and return all the favorites by the category in the month
+
+    * To get the bests of anycategory by month ##/getFavoritesOfMonthByCategory(month,category)
+
+    Example:
+
+    [{"Name":"Hary potter","Rating":7,"Month":"March","Category":"Children"}]
+
+</section>
 </body>
 </html>
