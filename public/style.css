@@ -5,7 +5,8 @@ main,header,section,nav,footer,p,button {display: block;}
     background: #3b5998;
     color: white;}
 
-
+img{width: 200px;
+height: 200px;}
 h1,h2,h3,h4{
     color: #ffffff;
     font-size: 180%;
