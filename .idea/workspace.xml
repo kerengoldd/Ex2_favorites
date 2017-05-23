@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2aabaff8-aae1-455c-9991-8a100d5522d6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -379,7 +378,7 @@
       <workItem from="1495094607365" duration="15967000" />
       <workItem from="1495302158211" duration="526000" />
       <workItem from="1495524436251" duration="7095000" />
-      <workItem from="1495537384911" duration="888000" />
+      <workItem from="1495537384911" duration="934000" />
     </task>
     <task id="LOCAL-00001" summary=".&#10;">
       <created>1494479736929</created>
@@ -556,11 +555,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495538195844</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="with Mongo DB and all routs">
+      <created>1495538617921</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1495538617921</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146920000" />
+    <option name="totallyTimeSpent" value="146966000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
