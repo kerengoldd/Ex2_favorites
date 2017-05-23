@@ -1,7 +1,7 @@
 ## [Ex2_favorites](https://kerengoldd.github.io/Ex2_favorites/)
 Web service to VOD favorites
 
-* [API](https://kerengoldd.github.io/Ex2_favorites/)
+* [API](https://favorites1.herokuapp.com/)
 
 * [GitHub](https://github.com/kerengoldd/Ex2_favorites)
 

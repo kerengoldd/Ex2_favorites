@@ -10,7 +10,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extend: true}));
 
 app.get('/', function (req, res) {
-    res.sendfile(`${__dirname}/index.html`);
+    //res.sendfile(`${__dirname}/index.html`);
+    res.redirect('assets/index.html');
+
 });
 
 app.get('/getAllFavorites',(req,res) => {
@@ -26,7 +28,7 @@ app.post('/getFavoritesOfMonthByCategory',(req,res) =>{
 });
 
 app.all('*',(req,res) =>{
-    res.sendFile(`${__dirname}/index.html`);
+    res.redirect('assets/error.html');
 })
 
 app.listen(port);
