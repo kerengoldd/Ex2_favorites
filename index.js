@@ -35,8 +35,8 @@ app.post('/getByRating',(req,res)=>{
 });
 
 app.all('*',(req,res) =>{
-    // res.sendFile(`${__dirname}/index.html`);
-    res.redirect(`https://kerengoldd.github.io/Ex2_favorites/`);
+     res.sendFile(`${__dirname}/index.html`);
+  //  res.redirect(`https://kerengoldd.github.io/Ex2_favorites/`);
 
 })
 
