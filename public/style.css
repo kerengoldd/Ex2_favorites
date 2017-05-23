@@ -1,9 +1,16 @@
-body{
+*{margin: 0px; padding: 0px;}
+main,header,section,nav,footer,p,button {display: block;}
+#wrapper {margin: 0px auto;
+    width: 1000px;
     background: #3b5998;
-    color: white;
-}
+    color: white;}
+
 
 h1,h2,h3,h4{
     color: #ffffff;
+    font-size: 180%;
 }
-img{width: 150px;height: 150px;}
+section{
+    color: #ffffff;
+    font-size: 150%;
+}
