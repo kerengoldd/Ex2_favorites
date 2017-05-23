@@ -65,21 +65,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="consts.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consts.js">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="consts.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/consts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="15">
+              <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -173,8 +173,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/consts.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/consts.js" />
       </list>
     </option>
   </component>
@@ -268,7 +268,7 @@
     <property name="SearchEverywhereHistoryKey" value="font&#9;ACTION&#9;EditorIncreaseFontSize" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="FullScreen" value="true" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore&#10;/Users/KerenGold/Sites/favorites1/consts.js" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -369,7 +369,7 @@
       <workItem from="1495094607365" duration="15967000" />
       <workItem from="1495302158211" duration="526000" />
       <workItem from="1495524436251" duration="7095000" />
-      <workItem from="1495537384911" duration="2553000" />
+      <workItem from="1495537384911" duration="2749000" />
     </task>
     <task id="LOCAL-00001" summary=".&#10;">
       <created>1494479736929</created>
@@ -623,11 +623,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495540458917</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="with Mongo DB and all routs">
+      <created>1495540629147</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1495540629147</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148585000" />
+    <option name="totallyTimeSpent" value="148781000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1005,18 +1012,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
           <folding />
         </state>
       </provider>
