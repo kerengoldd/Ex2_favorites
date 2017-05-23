@@ -1,6 +1,7 @@
 body{
-    background: #3b5998;
+    background: #1ae6e1;
 }
-h1{
+h1,h2,h3,h4{
     color: #ffffff;
 }
+img{width: 150px;height: 150px;}
