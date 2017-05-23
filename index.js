@@ -9,10 +9,8 @@ app.use('/assets',express.static(`${__dirname}/public`));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extend: true}));
 
-app.get('/', function (req, res) {
-    //res.sendfile(`${__dirname}/index.html`);
-    res.redirect('assets/index.html');
-
+app.all('/', function (req, res) {
+    res.sendfile(`${__dirname}/index.html`);
 });
 
 app.get('/getAllFavorites',(req,res) => {
@@ -28,7 +26,7 @@ app.post('/getFavoritesOfMonthByCategory',(req,res) =>{
 });
 
 app.all('*',(req,res) =>{
-    res.redirect('assets/error.html');
+    res.sendFile(`${__dirname}/error.html`);
 })
 
 app.listen(port);
