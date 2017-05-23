@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extend: true}));
 
 app.all('/', function (req, res) {
-    res.sendfile(`${__dirname}/index.html`);
+    res.sendFile(`${__dirname}/index.html`);
 });
 
 app.get('/getAllFavorites',(req,res) => {
