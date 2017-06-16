@@ -8,6 +8,15 @@ const express = require('express'),
 app.use('/assets',express.static(`${__dirname}/public`));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extend: true}));
+app.use(
+    (req,res,next) => {
+        res.header("Access-Control-Allow-Origin", "*");
+        res.header("Access-Control-Allow-Headers",
+            "Origin, X-Requested-With, Content-Type, Accept");
+        res.set("Content-Type", "application/json");
+        next();
+    });
+
 
 app.all('/', function (req, res) {
     res.sendFile(`${__dirname}/index.html`);
